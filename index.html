@@ -67,6 +67,16 @@
 
     let errorBtns = Array.from(document.querySelectorAll('#error-btns > button'));
     // TODO - Make buttons functional
+    errorBtns[0].addEventListener('click', () =>{
+      console.log(firstNum);
+    });
+    errorBtns[1].addEventListener('click',() => {
+      console.error("This is an error message");
+    });
+    errorBtns[2].addEventListener('click',() => {
+      console.error("This is an error message");
+    });
+
   </script>
 </body>
 </html>
