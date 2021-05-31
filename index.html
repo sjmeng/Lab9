@@ -54,14 +54,7 @@
     <button>Console Trace</button>
     <button>Trigger a Global Error</button>
   </section>
-  
-  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
-  <script>
-    window.TrackJS && TrackJS.install({ 
-      token: "542e8c06f969444cb0108f26c10f4831"
-      // for more configuration options, see https://docs.trackjs.com
-    });
-  </script>
+
                           
   <script>
 
@@ -133,7 +126,6 @@
     window.onerror = function(errorMsg) {
       console.log(errorMsg);
     }
-    TrackJS.track('Testing TrackJS!');
 
   </script>
 </body>
