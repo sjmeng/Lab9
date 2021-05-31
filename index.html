@@ -130,11 +130,15 @@
     });
     errorBtns[10].addEventListener('click',() => {
       throw new Error('Global Error Triggered');
+      window.TrackJS && TrackJS.install({ 
+      token: "542e8c06f969444cb0108f26c10f4831"
+      // for more configuration options, see https://docs.trackjs.com
+    });
     });
     window.onerror = function(errorMsg) {
       console.log(errorMsg);
     }
-
+    TrackJS.track('Testing TrackJS!');
 
   </script>
 </body>
